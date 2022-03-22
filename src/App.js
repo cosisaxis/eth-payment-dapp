@@ -44,9 +44,9 @@ export default function App() {
 
   return (
     <form className="m-4" onSubmit={submit}>
-      <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
+      <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-red-500">
         <main className="mt-4 p-4">
-          <h1 className="text-xl font-semibold text-center text-red-500">
+          <h1 className="text-xl font-semibold text-center text-white">
             Send ETH payment
           </h1>
           <div className="">
@@ -80,7 +80,7 @@ export default function App() {
 
           <div>
             <h2 className=" text-center mt-2 text-white">
-              made by <a href='https://twitter.com/cartieraxis' className="text-red-500">Axis</a>
+              made by <a href='https://twitter.com/cartieraxis' className="text-black font-bold">Axis</a>
             </h2>
           </div>
         </footer>
