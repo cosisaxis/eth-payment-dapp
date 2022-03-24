@@ -5,6 +5,7 @@ import TransactionsList from "./TransactionsList";
 import './index.css'
 
 
+
 const payment = async ({ setError, setTxs, ether, addr }) => {
   try {
     if (!window.ethereum)
@@ -43,11 +44,12 @@ export default function App() {
   };
 
   return (
+   <div className="container">
     <form className="m-4" onSubmit={submit}>
       <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-red-500">
         <main className="mt-4 p-4">
           <h1 className="text-xl font-semibold text-center text-white">
-            Send ETH payment
+            ETH Payment
           </h1>
           <div className="">
             <div className="my-3">
@@ -86,6 +88,8 @@ export default function App() {
         </footer>
       </div>
     </form>
+    </div>
+   
 
     
   );
