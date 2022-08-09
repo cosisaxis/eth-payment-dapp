@@ -9,7 +9,7 @@ import './index.css'
 const payment = async ({ setError, setTxs, ether, addr }) => {
   try {
     if (!window.ethereum)
-      throw new Error("No wallet was found, please install metamask");
+      throw new Error("No wallet was found, please install");
 
     await window.ethereum.send("eth_requestAccounts");
     const provider = new ethers.providers.Web3Provider(window.ethereum);
